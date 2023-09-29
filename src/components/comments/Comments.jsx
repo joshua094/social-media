@@ -21,7 +21,13 @@ const Comments = () => {
 
 
   return (
-    <div className='comments'>{
+    <div className='comments'>
+        <div className="write">
+            <img src="https://images.pexels.com/photos/4890259/pexels-photo-4890259.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+            <input type="text" placeholder='write a comment' />
+            <button>Send</button>
+        </div>
+        {
         comments.map(comment=>(
             <div className="comment">
                 <img src={comment.profilePicture} alt="" />
